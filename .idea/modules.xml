@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BJ-algorithm.iml" filepath="$PROJECT_DIR$/BJ-algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/BJ-algorithm.iml" filepath="$PROJECT_DIR$/.idea/BJ-algorithm.iml" />
     </modules>
   </component>
 </project>
