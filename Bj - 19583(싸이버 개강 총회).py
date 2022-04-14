@@ -15,17 +15,17 @@ for time in times:
     cnt += 1
 
 while 1:
-    try:
-        line = input()
-        time, name = line.split()
-        hour, min = time.split(":")
-        chat_time = int(hour) * 60 + int(min)
-        if chat_time <= S:
-            database[name] = 1
-        elif E <= chat_time and chat_time <= Q:
-            database[name] = 0
-    except:
+    line = sys.stdin.readline()
+    if len(line) < 5:
         break
+    time, name = line.split()
+    hour, min = time.split(":")
+    chat_time = int(hour) * 60 + int(min)
+    if chat_time <= S:
+        database[name] = 1
+    elif E <= chat_time and chat_time <= Q:
+        if name in database:
+            database[name] = 0
 
 ans = 0
 for key, value in database.items():
