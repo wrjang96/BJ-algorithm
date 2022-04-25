@@ -1,5 +1,3 @@
-import sys
-input = sys.stdin.readline
 def move(nx,ny, flag):
     global queue
     global N
